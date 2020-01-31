@@ -5,10 +5,10 @@ async function main () {
   try {
     const pool = mysql.createPool({
       connectionLimit: 10,
-      host: process.env.DB_HOST || 'localhost',
-      user: process.env.DB_USER || 'applicationuser',
-      password: process.env.DB_PASS || 'applicationuser',
-      database: process.env.DB_NAME || 'movie_db'
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASS,
+      database: process.env.DB_NAME
     })
     pool.query = util.promisify(pool.query)
 
@@ -22,7 +22,7 @@ async function main () {
       ['TheOne', 'glyphicon-globe'],
       ['ComicBookHero.com', 'glyphicon-flash']
     ]
-    await pool.query(publicationsQuery, [publicationsValues])
+    // await pool.query(publicationsQuery, [publicationsValues])
 
     const reviewersQuery = 'INSERT INTO reviewers (name, publication, avatar) VALUES ?'
     const reviewersValues = [
@@ -34,9 +34,9 @@ async function main () {
       ['Martin Thomas', 'TheOne', 'https://s3.amazonaws.com/uifaces/faces/twitter/karsh/128.jpg'],
       ['Anthony Miller', 'ComicBookHero.com', 'https://s3.amazonaws.com/uifaces/faces/twitter/9lessons/128.jpg']
     ]
-    await pool.query(reviewersQuery, [reviewersValues])
+    // await pool.query(reviewersQuery, [reviewersValues])
 
-    const moviesQuery = 'INSERT INTO movies (title, release_year, score, reviewer, publication) VALUES ?'
+    const moviesQuery = "INSERT INTO movies (title, release_year, score, reviewer, publication) VALUES ?"
     const moviesValues = [
       ['Suicide Squad', '2016', 8, 'Robert Smith', 'The Daily Reviewer'],
       ['Batman vs. Superman', '2016', 6, 'Chris Harris', 'International Movie Critic'],
