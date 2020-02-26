@@ -22,7 +22,7 @@ async function main () {
       ['TheOne', 'glyphicon-globe'],
       ['ComicBookHero.com', 'glyphicon-flash']
     ]
-    // await pool.query(publicationsQuery, [publicationsValues])
+    await pool.query(publicationsQuery, [publicationsValues])
 
     const reviewersQuery = 'INSERT INTO reviewers (name, publication, avatar) VALUES ?'
     const reviewersValues = [
@@ -34,7 +34,7 @@ async function main () {
       ['Martin Thomas', 'TheOne', 'https://s3.amazonaws.com/uifaces/faces/twitter/karsh/128.jpg'],
       ['Anthony Miller', 'ComicBookHero.com', 'https://s3.amazonaws.com/uifaces/faces/twitter/9lessons/128.jpg']
     ]
-    // await pool.query(reviewersQuery, [reviewersValues])
+    await pool.query(reviewersQuery, [reviewersValues])
 
     const moviesQuery = "INSERT INTO movies (title, release_year, score, reviewer, publication) VALUES ?"
     const moviesValues = [
