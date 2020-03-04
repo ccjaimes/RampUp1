@@ -1,4 +1,4 @@
-# DevOps Ramp-up Projects
+# DevOps Ramp-up Projects.
 
 
 Welcome to the Endava Bogota DevOps Ramp Up site. DevOps has a wide variety of practices, tools and methodologies which enable us to be an important part of and agile delivery culture. Most of the DevOps practitioners are part of the Continuous Delivery Practice. More info on the practice can be found here:
