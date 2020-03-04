@@ -6,7 +6,7 @@ https://conf.endava.com/display/CDP/Continuous+Delivery+Practice
 
 https://weblog.endava.com/continuous-delivery-initiative/introduction-to-cd/
 
-This ramp-up is presented in challenges. Each challenge is chose to show new joiners the basics in some of the DevOps practices, and it is designed to help us use the same language after its completion. We are tool agnostics, so you can use any tool you like, but we do have a client base that need us to be proficient in some basic AWS concepts. They are ordered according our current view of projects necessities.
+This rampup is presented in challenges. Each challenge is chose to show new joiners the basics in some of the DevOps practices, and it is designed to help us use the same language after its completion. We are tool agnostics, so you can use any tool you like, but we do have a client base that need us to be proficient in some basic AWS concepts. They are ordered according our current view of projects necessities.
 
 
 
